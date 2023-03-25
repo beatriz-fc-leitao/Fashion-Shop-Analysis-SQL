@@ -465,6 +465,8 @@ INSERT INTO <TABLE NAME> VALUES
 Click here to see business insigths gained from the model! 👋🏻
 </summary>
 
+<br>
+
 In this section, I defined 5 business questions and answered them using SQL queries. The main objective leverage the model and the data to help the fashion shop make informed decisions, improve sales, and stay ahead of their competition. You can find the questions below
 
 **Question 1: Which are the top 3 colors sold last season (summer 2022)?**
@@ -479,7 +481,15 @@ GROUP BY A.COLOR_NAME
 ORDER BY 2 DESC
 LIMIT 3;
 ```
-	
+
+|COLOR |NUMBER_ITEMS_SOLD|
+|------|-----------------|
+|Pink  |3                |
+|Black |2                |
+|Green |2                |
+
+Here we see that pink, black, and green were the top 3 colors last season.
+
 **Question 2: How much money was spent per credit card type?**
 ```sql
 SELECT A.DESCRIPTION CREDIT_CARD_TYPE, ROUND(SUM(D.TOTAL_ORDER),2) AMOUNT_SPENT
@@ -489,6 +499,13 @@ JOIN CCPAYMENT C ON (B.CCPAYMENT_ID = C.CCPAYMENT_ID)
 JOIN TICKET D ON (C.CCPAYMENT_ID = D.CCPAYMENT_ID)
 GROUP BY A.DESCRIPTION;
 ```
+
+|CREDIT_CARD_TYPE|AMOUNT_SPENT|
+|----------------|------------|
+|American Express|3350.58     |
+|Other bank card |3774.98     |
+|MasterCard      |3813.42     |
+|Visa            |4279.19     |
 
 **Question 3: What is the average amount spent per type of clothes?**
 ```sql
@@ -500,6 +517,14 @@ JOIN TYPE D ON (C.TYPE_ID = D.TYPE_ID)
 GROUP BY D.TYPE_NAME;
 ```
 
+|TYPE_OF_CLOTHES |AVG_AMOUNT_SPENT|
+|----------------|----------------|
+|Skirts          |759.84          |
+|Trousers/Shorts |613.45          |
+|Shirts/Blouses/Polo Shirts/T-shirts|702.23          |
+|Sweaters/Pullovers|439.63          |
+|Jackets/Blazers/Cardigans/Waistcoats|579.61          |
+
 **Question 4: Which brand results in the most profit?**
 ```sql
 SELECT A.BRAND_NAME, ROUND(SUM(C.PRODUCT_AMOUNT),2) PROFIT
@@ -510,6 +535,10 @@ GROUP BY A.BRAND_NAME
 ORDER BY 2 DESC
 LIMIT 1;
 ```
+
+|BRAND_NAME      |PROFIT |
+|----------------|-------|
+|Nautica         |3404.94|
 
 **Question 5: Which customer bought the largest number of female clothes?**
 ```sql
@@ -524,3 +553,7 @@ GROUP BY A.CUSTOMER_ID
 ORDER BY 2 DESC
 LIMIT 1;
 ```
+
+|CUSTOMER_NAME   |FEMALE_ITEMS_PURCHASED|
+|----------------|----------------------|
+|Ivanna Ovens    |20                    |
