@@ -3,6 +3,7 @@
 ## Introduction
 <details> 
 <summary>
+</summary>
 	  
 **👩🏻‍💼 THE SITUATION** 
 
