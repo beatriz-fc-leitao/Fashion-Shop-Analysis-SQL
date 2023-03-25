@@ -527,7 +527,7 @@ GROUP BY D.TYPE_NAME;
 |Sweaters/Pullovers|439.63          |
 |Jackets/Blazers/Cardigans/Waistcoats|579.61          |
 
-Here we see that on avergae over the last season, customers spent the most money on skirts, followed by toursers/shorts, then shirt, then sweaters, and lastly jackets.
+Here we see that on avergae over the last season, customers spent the most money on skirts, followed by toursers/shorts, then shirt, then sweaters, and lastly jackets. The shop can leverage this information to optimize their inventory management, specifically, they can ensure that they have enough stock of the items for which most money was spent on, such as skirts and  trousers/shorts. Additionally, they can offer a wider variety of styles and colors in these categories to meet customer demand and appeal to a broader range of customers. They can also use these insights to inform their marketing and sales strategies by considering featuring items in the high-priced categories prominently in their marketing campaigns, and offering exclusive promotions or discounts on items in these categories to drive sales further.
 
 **Question 4: Which brand results in the most profit?**
 ```sql
@@ -543,7 +543,9 @@ LIMIT 1;
 |BRAND_NAME      |PROFIT |
 |----------------|-------|
 |Nautica         |3404.94|
-
+	
+Here we see that Nautica was the brand that generated the highest profit. Knowign this, the shop can continue to collaborate with Nautica and offer an increased range of Nautica lothing items to further increase sales and convert one-ff customers who purchased Nautica products to loyal recurring customers. If this pattern is observed again in the coming season, the shop could also renegotiate their contract with Nautica to make it more favourable. Additionally, the shop could also analyze the characteristics of the Nautica brand and its products to identify opportunities to expand their product offerings in a similar style or price range, as well as to adjust their pricing strategies to optimize revenue and profitability.
+	
 **Question 5: Which customer bought the largest number of female clothes?**
 ```sql
 SELECT CONCAT(A.FIRSTNAME,' ',A.LASTNAME) CUSTOMER_NAME, SUM(C.QUANTITY) FEMALE_ITEMS_PURCHASED
@@ -561,3 +563,5 @@ LIMIT 1;
 |CUSTOMER_NAME   |FEMALE_ITEMS_PURCHASED|
 |----------------|----------------------|
 |Ivanna Ovens    |20                    |
+	
+Here we see that
