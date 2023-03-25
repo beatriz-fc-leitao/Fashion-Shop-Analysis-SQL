@@ -22,7 +22,7 @@ Use SQL to:
 ## Entity Relationship Diagram
 <details> 
 <summary>
-Click here for the Entity Relationship Diagram! 👋🏻
+Click here for the Entity Relationship Diagram! 📉
 </summary>
 	
 <kbd><img src="https://github.com/beatriz-fc-leitao/SQL_projects/blob/main/final_ERD.png" width="750" height="480"></kbd>
@@ -34,7 +34,7 @@ Click here for the Entity Relationship Diagram! 👋🏻
 ## Create Product Tables
 <details> 
 <summary>
-Click here to see the creation of the product related tables in the model! 👋🏻
+Click here to see the creation of the product related tables in the model! 👚
 </summary>
 	
 **PRODUCT TABLE**
@@ -115,7 +115,7 @@ CREATE TABLE GENDER(
 ## Create Ticket/Receipt tables
 <details> 
 <summary>
-Click here to see the creation of the ticket / receipt related tables in the model! 👋🏻
+Click here to see the creation of the ticket / receipt related tables in the model! 🧾
 </summary>
 	
 **TICKET TABLE**
@@ -180,7 +180,7 @@ CREATE TABLE CUSTOMER(
 ## Create Payment Tables
 <details> 
 <summary>
-Click here to see the creation of the payment related tables in the model! 👋🏻
+Click here to see the creation of the payment related tables in the model! 💰
 </summary>
 	
 **CC PAYMENT TABLE**
@@ -247,7 +247,7 @@ CREATE TABLE CCENTRY_METHOD (
 ## Create Relationships Between Tables
 <details> 
 <summary>
-Click here to see the code used to create relationships between each table to build the model! 👋🏻
+Click here to see the code used to create relationships between each table to build the model! 𝌠
 </summary>
 
 **Creating relationships between product tables**
@@ -332,7 +332,7 @@ ALTER TABLE CCPAYMENT_CARD
 ## View Tables
 <details> 
 <summary>
-Click here to see the a preview of the final tables in the model! 👋🏻
+Click here to see the a preview of the final tables in the model! 𝌠
 </summary>
 
 <br>
@@ -462,7 +462,7 @@ INSERT INTO <TABLE NAME> VALUES
 ## Business Questions & Insights
 <details> 
 <summary>
-Click here to see business insigths gained from the model! 👋🏻
+Click here to see business insigths gained from the model! 📊
 </summary>
 
 <br>
