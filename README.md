@@ -1,4 +1,4 @@
-# 📊 SQL: Fashion Shop Analysis
+# 👚 SQL: Fashion Shop Analysis 👕
 
 ## Introduction
 	  
@@ -567,3 +567,19 @@ LIMIT 1;
 Here we see that Ivanna Ovens was the customer who purchased the largest number of female clothes. Knowing this, the shop can use this insight to identify similar customers who are likely to make frequent purchases and tailor marketing campaigns and promotions to target them specifically. Also, they can offer exclusive perks and discounts to top customers like Ivanna, such as early access to new products or free shipping, to encourage them to continue shopping with the business. Lastly, the shop can could improve customer loyalty and satisfaction by providing excellent customer service and personalized recommendations based on past purchases. They can also reach out to top customers like Ivanna to gather feedback and insights on their shopping experiences, and use this information to make improvements and adjustments to their products and services.
 	
 </details>
+
+***
+	
+## Business Questions & Insights
+<details> 
+<summary>
+Click here to see the conclusion! 🔚
+</summary>
+
+<br>
+	
+In this project, I have created a normalized operational database for the little fashion shop. It is a relational database created using MySQL that contains data on shop products, sales, payments, employees, and customers. This database business value to the shop as they are now able to store their data digitally and leverage it to make informed business decisions regarding inventory management, product offerings, and sales and marketing strategies. 
+	
+Specifically, I found that the top three colors of the last season were pink, black, and green; American Express, "Other bank card", MasterCard, and Visa were the top banks with the most money spent; customers spent the most money on average on skirts, followed by trousers/shorts, shirts, sweaters, and jackets; Nautica was the brand that generated the most profit, and Ivanna Ovens was the top customer with the most purchases.
+
+By leveraging these insights, the business can optimize their inventory management by ensuring that they have enough stock of the most popular products and brands. They can also use these insights to tailor their marketing campaigns and promotions to target the most profitable customer segments, such as top customers or those interested in high-priced categories. Additionally, they can use customer feedback and market trends to inform their product offerings and pricing strategies, ultimately improving their overall profitability and customer satisfaction!
