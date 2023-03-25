@@ -18,6 +18,10 @@ Use SQL to:
 - Create an Entity Relationship Diagram for a relational model that includes information about products, sales, and payments.
 - Create tables for the relational model and populate them with data
 - Use SQL queries to gain insights into the business.
+	
+</details> 
+	
+***
 
 ## Entity Relationship Diagram
 <details> 
