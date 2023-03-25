@@ -564,4 +564,6 @@ LIMIT 1;
 |----------------|----------------------|
 |Ivanna Ovens    |20                    |
 	
-Here we see that
+Here we see that Ivanna Ovens was the customer who purchased the largest number of female clothes. Knowing this, the shop can use this insight to identify similar customers who are likely to make frequent purchases and tailor marketing campaigns and promotions to target them specifically. Also, they can offer exclusive perks and discounts to top customers like Ivanna, such as early access to new products or free shipping, to encourage them to continue shopping with the business. Lastly, the shop can could improve customer loyalty and satisfaction by providing excellent customer service and personalized recommendations based on past purchases. They can also reach out to top customers like Ivanna to gather feedback and insights on their shopping experiences, and use this information to make improvements and adjustments to their products and services.
+	
+</details>
