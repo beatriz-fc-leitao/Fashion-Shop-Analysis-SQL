@@ -16,6 +16,8 @@ Use SQL to:
 - Create an Entity Relationship Diagram for a relational model that includes information about products, sales, and payments.
 - Create tables for the relational model and populate them with data
 - Use SQL queries to gain insights into the business.
+
+You can find the full SQL script for this project here: https://github.com/beatriz-fc-leitao/SQL_Fashion_Shop_Analysis/blob/main/fashion_retail_project.sql
 		
 ***
 
@@ -26,6 +28,8 @@ Click here for the Entity Relationship Diagram! 📉
 </summary>
 	
 <kbd><img src="https://github.com/beatriz-fc-leitao/SQL_projects/blob/main/final_ERD.png" width="750" height="480"></kbd>
+
+You can also find it here: https://github.com/beatriz-fc-leitao/SQL_Fashion_Shop_Analysis/blob/main/fashion_retail_data_model.mwb
 
 </details> 
 	
