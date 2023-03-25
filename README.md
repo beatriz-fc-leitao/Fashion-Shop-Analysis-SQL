@@ -4,11 +4,11 @@
 	  
 **👩🏻‍💼 THE SITUATION** 
 
-You've been hired as a consultant for a small local fashion retailer. They currently do not store any informaiton on inventory, sales, or payments digitally and thus have difficulty with managing their inventory, gaining insights into top selling products, and understanding customr preferences to stay competitive in the market.
+I've been hired as a consultant for a small local fashion retailer. They currently do not store any informaiton on inventory, sales, or payments digitally and thus have difficulty with managing their inventory, gaining insights into top selling products, and understanding customr preferences to stay competitive in the market.
 
 **📈 THE BRIEF**
 
-You have been asked to create a logical plan for a database where the shop can keep product, sales, and payment information. After your logical plan is approved by the shop, you are asked to create the database, populate it with customer data, and use SQL queries to answer several business questions.
+I have been asked to create a logical plan for a database where the shop can keep product, sales, and payment information. After your logical plan is approved by the shop, you are asked to create the database, populate it with customer data, and use SQL queries to answer several business questions.
 
 **✏️ THE OBJECTIVE**
 
@@ -19,7 +19,7 @@ Use SQL to:
 		
 ***
 
-## Entity Relationship Diagram
+## 📉 Entity Relationship Diagram
 <details> 
 <summary>
 Click here for the Entity Relationship Diagram! 📉
@@ -31,7 +31,7 @@ Click here for the Entity Relationship Diagram! 📉
 	
 ***
 
-## Create Product Tables
+## 👚 Create Product Tables
 <details> 
 <summary>
 Click here to see the creation of the product related tables in the model! 👚
@@ -112,7 +112,7 @@ CREATE TABLE GENDER(
 	
 ***
 
-## Create Ticket/Receipt tables
+## 🧾 Create Ticket/Receipt tables
 <details> 
 <summary>
 Click here to see the creation of the ticket / receipt related tables in the model! 🧾
@@ -177,7 +177,7 @@ CREATE TABLE CUSTOMER(
 	
 ***
 
-## Create Payment Tables
+## 💰 Create Payment Tables
 <details> 
 <summary>
 Click here to see the creation of the payment related tables in the model! 💰
@@ -244,10 +244,10 @@ CREATE TABLE CCENTRY_METHOD (
 
 ***
 
-## Create Relationships Between Tables
+## 🔗 Create Relationships Between Tables
 <details> 
 <summary>
-Click here to see the code used to create relationships between each table to build the model! 𝌠
+Click here to see the code used to create relationships between each table to build the model! 🔗
 </summary>
 
 **Creating relationships between product tables**
@@ -329,7 +329,7 @@ ALTER TABLE CCPAYMENT_CARD
 
 ***
 	
-## View Tables
+## 𝌠 View Tables
 <details> 
 <summary>
 Click here to see the a preview of the final tables in the model! 𝌠
@@ -459,7 +459,7 @@ INSERT INTO <TABLE NAME> VALUES
 </details>
 
 ***
-## Business Questions & Insights
+## 📊 Business Questions & Insights
 <details> 
 <summary>
 Click here to see business insigths gained from the model! 📊
@@ -570,7 +570,7 @@ Here we see that Ivanna Ovens was the customer who purchased the largest number 
 
 ***
 	
-## Conclusion
+## 🔚 Conclusion
 <details> 
 <summary>
 Click here to see the conclusion! 🔚
