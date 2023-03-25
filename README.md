@@ -33,3 +33,24 @@ Click here for the Entity Relationship Diagram! 👋🏻
 	
 <kbd><img src="https://github.com/beatriz-fc-leitao/SQL_projects/blob/main/final_ERD.png" width="750" height="480"></kbd>
 
+## Creating Tables
+<details> 
+<summary>
+Click here to see the creation of the tables in the model! 👋🏻
+</summary>
+
+** PRODUCT TABLE
+```sql
+CREATE TABLE PRODUCT(
+   PRODUCT_ID BIGINT NOT NULL,
+   TYPE_ID BIGINT NOT NULL,
+   SIZE_CODE CHAR(2),
+   COLOR_CODE CHAR (6),
+   PRODUCT_NAME VARCHAR(40) NOT NULL,
+   BRAND_ID BIGINT NOT NULL, 
+   GENDER_ID BIGINT NOT NULL,
+   DESCRIPTION VARCHAR(100) NOT NULL,
+   PRIMARY KEY (PRODUCT_ID)
+);
+```
+
