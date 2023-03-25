@@ -451,6 +451,7 @@ Click here to see the final tables in the model! 👋🏻
 |23671563807 |VS          |Y         |4539110207988444|Santander|21       |0                  |
 |24420215195 |VS          |N         |4485200478971866|Abanca  |19       |0                  |
 |30601529446 |AM          |Y         |349887415651991|BBVA    |23       |0                  |
+
 **CC PAYMENT TYPE TABLE**
 **CC PAYMENT STATE TABLE**
 ** CCENTRY METHOD TABLE**
