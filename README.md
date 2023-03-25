@@ -488,7 +488,7 @@ LIMIT 3;
 |Black |2                |
 |Green |2                |
 
-Here we see that pink, black, and green were the top 3 colors last season.
+Here we see that pink, black, and green were the top 3 colors last season. The shop can use this information to optimize their inventory management Specifically, to capitalize on the popularity of these colors, the shop can focus on stocking up on more products that feature these colors in their upcoming collections. They can also highlight these colors in their marketing campaigns to appeal to their target audience's preferences. Moreover, they can consider creating exclusive promotions or discounts on items that come in these colors to drive sales and attract customers. In the future, they should monitor customer feedback and market trends to stay up to date on changing color preferences and adjust their strategies accordingly.
 
 **Question 2: How much money was spent per credit card type?**
 ```sql
