@@ -341,14 +341,22 @@ ALTER TABLE CCPAYMENT_CARD
 Click here to see the final tables in the model! 👋🏻
 </summary>
 
+Below you can see a preview (first 3 rows) of each final table. The full tables can be found as CSV files in this repo.
+	
+The data was inserted directly into each table using SQL insert statements.
+
+```sql
+# General structure for data inserts
+INSERT INTO <TABLE NAME> VALUES
+(data);
+```
+
 ** PRODUCT TABLE**
 |PRODUCT_ID|TYPE_ID  |SIZE_CODE|COLOR_CODE|PRODUCT_NAME|BRAND_ID|GENDER_ID|DESCRIPTION        |
 |----------|---------|---------|----------|------------|--------|---------|-------------------|
 |2039      |10001335 |M        |009933    |Trousers    |86010900|30003891 |sustainable        |
 |8500      |10001334 |L        |ffff00    |Skirt       |86010700|30004039 |Made with love     |
 |9850      |100001350|L        |000000    |Waistcoat   |86010500|30003891 |Made with love     |
-|35987     |10001352 |L        |ff6600    |T-shirt     |86010500|30003891 |sustainable        |
-|181304    |10001353 |L        |ff0000    |Sweater     |86010900|30003891 |Made with love     |
 
 **BRAND TABLE**
 |BRAND_ID|BRAND_NAME|EMAIL|
@@ -356,8 +364,6 @@ Click here to see the final tables in the model! 👋🏻
 |86010100|GAP       |contact@gap.com|
 |86010200|American Eagle|contact@ae.com|
 |86010300|HM        |contact@hm.com|
-|86010400|ZARA      |contact@zara.com|
-|86010500|Calvin Klein|contact@ck.com|
 
 **COLOR TABLE**
 |COLOR_CODE|COLOR_NAME|
@@ -365,8 +371,6 @@ Click here to see the final tables in the model! 👋🏻
 |000000    |Black     |
 |0000b3    |Blue      |
 |009933    |Green     |
-|ff0000    |Red       |
-|ff6600    |Orange    |
 
 **CATEGORY TABLE**
 |CATEGORY_ID|CATEGORY_NAME|
@@ -388,8 +392,6 @@ Click here to see the final tables in the model! 👋🏻
 |10001334|Skirts   |67010300   |
 |10001335|Trousers/Shorts|67010300   |
 |10001352|Shirts/Blouses/Polo Shirts/T-shirts|67010800   |
-|10001353|Sweaters/Pullovers|67010800   |
-|100001350|Jackets/Blazers/Cardigans/Waistcoats|67010800   |
 	
 **GENDER TABLE**
 |GENDER_ID|GENDER_NAME|
@@ -404,8 +406,6 @@ Click here to see the final tables in the model! 👋🏻
 |36701285 |2022-01-09 11:00:18|3          |1          |4.00000      |22.56000 |163.56000  |355501500143|
 |48937606 |2022-04-02 17:01:15|3          |2          |3.00000      |12.00800 |87.05800   |178691081716|
 |53957703 |2022-05-22 14:02:34|4          |3          |1.00000      |37.10400 |269.00400  |72857319254 |
-|56714845 |2022-03-18 15:03:23|2          |1          |9.00000      |245.83680|1782.31680 |247939218073|
-|60188437 |2022-09-02 13:04:24|5          |2          |1.00000      |25.60000 |185.60000  |277212338225|
 
 **TICKET ITEM TABLE**
 |TICKET_ID|NUMSEQ   |PRODUCT_ID|QUANTITY|PRICE  |TAX_AMOUNT|PRODUCT_AMOUNT|
@@ -413,8 +413,6 @@ Click here to see the final tables in the model! 👋🏻
 |36701285 |1        |645158    |2       |70.50000|11.28000  |141.00000     |
 |48937606 |2        |202412    |1       |75.05000|12.00800  |75.05000      |
 |53957703 |3        |9850      |2       |115.95000|18.55200  |231.90000     |
-|56714845 |4        |656897    |1       |99.99000|15.99840  |99.99000      |
-|56714845 |5        |432766    |1       |85.90000|13.74400  |85.90000      |
 
 **EMPLOYEE TABLE**
 |EMPLOYEE_ID|FIRSTNAME|LASTNAME|DOB|EMAIL  |PHONENO  |
@@ -422,8 +420,6 @@ Click here to see the final tables in the model! 👋🏻
 |1          |Carlos   |Lopez   |1992-01-01|c.lopez@store.com|34615824328|
 |2          |Maria    |Salim   |1989-03-29|m.salim@store.com|34670561337|
 |3          |Sami     |Omari   |1970-02-23|s.omari@store.com|34655870193|
-|4          |Pablo    |Reberto |1982-11-17|p.reberto@store.com|34697557362|
-|5          |Alex     |Smith   |1991-09-07|a.smith@store.com|34670881472|
 
 **CUSTOMER TABLE**
 |CUSTOMER_ID|FIRSTNAME|LASTNAME|DOB|EMAIL  |PHONENO  |
@@ -431,8 +427,6 @@ Click here to see the final tables in the model! 👋🏻
 |1          |Emilia   |Kenny   |1995-05-02|e.kenny@gmail.com|34615824324|
 |2          |Ivanna   |Ovens   |1982-05-19|ivanna.o@hotmail.com|34673561237|
 |3          |Mariana  |Rea     |1979-01-11|m.rea79@gmail.com|34653870093|
-|4          |Anthony  |Ekerot  |1983-10-17|a.ekerot@hotmail.com|34692357092|
-|5          |Dylan    |Moncure |1992-07-20|dylan.moncure@gmail.com|34648631472|
 
 **CCPAYMENT TABLE**
 |CCPAYMENT_ID|CCPAYTRAN_ID|EXPECTED_AMOUNT|APPROVING_AMOUNT|APPROVED_AMOUNT|CCPAYMENT_STATE|TIMECREATED        |TIMEUPDATED        |TIMEEXPIRED        |
@@ -440,8 +434,6 @@ Click here to see the final tables in the model! 👋🏻
 |8305929187  |330749321073|1782.31680     |1782.31680      |1782.31680     |2              |2022-03-18 15:03:23|2022-03-18 15:03:59|2022-03-18 15:05:15|
 |16837199743 |277654323148|662.36000      |662.36000       |662.36000      |2              |2022-05-20 10:33:32|2022-05-20 10:34:31|2022-05-20 10:36:21|
 |23671563807 |127187561115|154.28000      |154.28000       |154.28000      |2              |2022-01-27 12:30:49|2022-01-27 12:32:21|2022-01-27 12:33:11|
-|24420215195 |213095869570|556.80000      |556.80000       |556.80000      |2              |2022-02-15 10:27:46|2022-02-15 10:29:26|2022-02-15 10:32:26|
-|30601529446 |789872294047|199.28800      |199.28800       |199.28800      |2              |2022-06-04 11:05:20|2022-06-04 11:05:57|2022-06-04 11:07:17|
 
 **CC CARD TABLE**
 |CCPAYMENT_ID|PAYMENT_TYPE|IS_ENCRYPT|CARD_NUMBER|BANKNAME|CCEXPDATE|CCENTRY_METHOD     |
@@ -449,12 +441,27 @@ Click here to see the final tables in the model! 👋🏻
 |8305929187  |AM          |Y         |344491990131977|Santander|21       |2                  |
 |16837199743 |MC          |Y         |5500380688224633|Caixabank|19       |2                  |
 |23671563807 |VS          |Y         |4539110207988444|Santander|21       |0                  |
-|24420215195 |VS          |N         |4485200478971866|Abanca  |19       |0                  |
-|30601529446 |AM          |Y         |349887415651991|BBVA    |23       |0                  |
 
 **CC PAYMENT TYPE TABLE**
+|CCTYPE|DESCRIPTION|
+|------|-----------|
+|AM    |American Express|
+|BK    |Other bank card|
+|MC    |MasterCard |
+	
 **CC PAYMENT STATE TABLE**
+|CCSTATE|DESCRIPTION|
+|-------|-----------|
+|0      |new        |
+|1      |approving  |
+|2      |approved   |
+	
 ** CCENTRY METHOD TABLE**
+|CCMETHOD|DESCRIPTION|
+|--------|-----------|
+|0       |Swiping    |
+|1       |Dipping    |
+|2       |Contactless|
 	
 </details>
 
