@@ -570,7 +570,7 @@ Here we see that Ivanna Ovens was the customer who purchased the largest number 
 
 ***
 	
-## Business Questions & Insights
+## Conclusion
 <details> 
 <summary>
 Click here to see the conclusion! 🔚
