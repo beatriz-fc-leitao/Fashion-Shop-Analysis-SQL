@@ -506,6 +506,8 @@ GROUP BY A.DESCRIPTION;
 |Other bank card |3774.98     |
 |MasterCard      |3813.42     |
 |Visa            |4279.19     |
+	
+Here we see that American Express was the credit card with which more money was spent on purchases at the shop followed by "Other bank card", then MasterCard, and finally Visa. The shop can leverage this insight to make informed decisions regarding their payment processing and marketing strategies. For instance, they can consider offering exclusive promotions or discounts to customers who use these payment methods to encourage their use. Additionally, they could collaborate with these banks to create co-branded marketing campaigns or offer loyalty or rewards programs to their mutual customers. By capitalizing on these popular payment methods, the shop can attract more customers and drive sales.
 
 **Question 3: What is the average amount spent per type of clothes?**
 ```sql
@@ -524,6 +526,8 @@ GROUP BY D.TYPE_NAME;
 |Shirts/Blouses/Polo Shirts/T-shirts|702.23          |
 |Sweaters/Pullovers|439.63          |
 |Jackets/Blazers/Cardigans/Waistcoats|579.61          |
+
+Here we see that on avergae over the last season, customers spent the most money on skirts, followed by toursers/shorts, then shirt, then sweaters, and lastly jackets.
 
 **Question 4: Which brand results in the most profit?**
 ```sql
