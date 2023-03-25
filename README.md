@@ -33,12 +33,16 @@ Click here for the Entity Relationship Diagram! 👋🏻
 	
 <kbd><img src="https://github.com/beatriz-fc-leitao/SQL_projects/blob/main/final_ERD.png" width="750" height="480"></kbd>
 
-## Creating Tables
+</details> 
+	
+***
+
+## Creating Product Tables
 <details> 
 <summary>
-Click here to see the creation of the tables in the model! 👋🏻
+Click here to see the creation of the product related tables in the model! 👋🏻
 </summary>
-
+	
 ** PRODUCT TABLE
 ```sql
 CREATE TABLE PRODUCT(
@@ -53,4 +57,73 @@ CREATE TABLE PRODUCT(
    PRIMARY KEY (PRODUCT_ID)
 );
 ```
+	
+** BRAND TABLE
+```sql
+CREATE TABLE BRAND(
+   BRAND_ID BIGINT NOT NULL,
+   BRAND_NAME VARCHAR(40) NOT NULL,
+   EMAIL VARCHAR(40),
+   PRIMARY KEY (BRAND_ID)
+);
+```
+	
+** COLOR TABLE
+```sql
+CREATE TABLE COLOR(
+   COLOR_CODE CHAR(6) NOT NULL,
+   COLOR_NAME VARCHAR(20) NOT NULL,
+   PRIMARY KEY (COLOR_CODE)
+);
+```	
+
+** CATEGORY TABLE
+```sql
+CREATE TABLE CATEGORY(
+   CATEGORY_ID BIGINT NOT NULL,
+   CATEGORY_NAME VARCHAR(40) NOT NULL,
+   PRIMARY KEY (CATEGORY_ID)
+);
+```
+
+** SIZE TABLE
+```sql
+CREATE TABLE SIZE(
+   SIZE_CODE CHAR(2) NOT NULL,
+   DESCRIPTION VARCHAR(40) NOT NULL,
+   PRIMARY KEY (SIZE_CODE)
+);
+```
+	
+** TYPE TABLE
+```sql
+CREATE TABLE TYPE(
+   TYPE_ID BIGINT NOT NULL,
+   TYPE_NAME VARCHAR(40) NOT NULL,
+   CATEGORY_ID BIGINT,
+   PRIMARY KEY (TYPE_ID)
+);
+```
+	
+** GENDER TABLE
+```sql
+CREATE TABLE GENDER(
+   GENDER_ID BIGINT NOT NULL,
+   GENDER_NAME VARCHAR(40) NOT NULL,
+   PRIMARY KEY (GENDER_ID)
+);
+```	
+	
+</details> 
+	
+***
+## Viewing Tables
+<details> 
+<summary>
+Click here to see the final tables in the model! 👋🏻
+</summary>
+
+** PRODUCT TABLE
+<kbd><img src="https://github.com/beatriz-fc-leitao/SQL_projects/blob/main/final_ERD.png" width="750" height="480"></kbd>
+
 
