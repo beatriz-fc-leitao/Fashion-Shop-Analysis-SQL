@@ -9,8 +9,9 @@ You've been hired as a consultant for a small local fashion retailer. They curre
 You have been asked to create a logical plan for a database where the shop can keep product, sales, and payment information. After your logical plan is approved by the shop, you are asked to create the database, populate it with customer data, and use SQL queries to answer several business questions.
 
 **✏️ THE OBJECTIVE**
+<details>
 
 Use SQL to:
-- Create an ERD diagram for a relational model that includes information about products, sales, and payments.
+- Create an Entity Relationship Diagram for a relational model that includes information about products, sales, and payments.
 - Create tables for the relational model and populate them with data
 - Use SQL queries to gain insights into the business.
