@@ -332,12 +332,11 @@ ALTER TABLE CCPAYMENT_CARD
 ## View Tables
 <details> 
 <summary>
-Click here to see the final tables in the model! 👋🏻
+Click here to see the a preview of the final tables in the model! 👋🏻
 </summary>
 
-Below you can see a preview (first 3 rows) of each final table. The full tables can be found as CSV files in this repo.
-	
-The data was inserted directly into each table using SQL insert statements.
+<br>
+Below you can see a preview (first 3 rows) of each final table. The full tables can be found as CSV files in this repo. The data was inserted directly into each table using SQL insert statements.
 
 ```sql
 # General structure for data inserts
@@ -460,4 +459,68 @@ INSERT INTO <TABLE NAME> VALUES
 </details>
 
 ***
+## Business Questions & Insights
+<details> 
+<summary>
+Click here to see business insigths gained from the model! 👋🏻
+</summary>
 
+In this section, I defined 5 business questions and answered them using SQL queries. The main objective leverage the model and the data to help the fashion shop make informed decisions, improve sales, and stay ahead of their competition. You can find the questions below
+
+**Question 1: Which are the top 3 colors sold last season (summer 2022)?**
+```sql
+SELECT A.COLOR_NAME COLOR, COUNT(A.COLOR_NAME) NUMBER_ITEMS_SOLD
+FROM COLOR A 
+JOIN PRODUCT B ON (A.COLOR_CODE = B.COLOR_CODE)
+JOIN TICKET_ITEM C ON (B.PRODUCT_ID = C.PRODUCT_ID)
+JOIN TICKET D ON (C.TICKET_ID = D.TICKET_ID)
+WHERE DATE(D.TIMEPLACED) BETWEEN '2022-06-21' AND '2022-09-23'
+GROUP BY A.COLOR_NAME
+ORDER BY 2 DESC
+LIMIT 3;
+```
+	
+**Question 2: How much money was spent per credit card type?**
+```sql
+SELECT A.DESCRIPTION CREDIT_CARD_TYPE, ROUND(SUM(D.TOTAL_ORDER),2) AMOUNT_SPENT
+FROM CCPAYMENT_TYPE A
+JOIN CCPAYMENT_CARD B ON (A.CCTYPE = B.PAYMENT_TYPE)
+JOIN CCPAYMENT C ON (B.CCPAYMENT_ID = C.CCPAYMENT_ID)
+JOIN TICKET D ON (C.CCPAYMENT_ID = D.CCPAYMENT_ID)
+GROUP BY A.DESCRIPTION;
+```
+
+**Question 3: What is the average amount spent per type of clothes?**
+```sql
+SELECT D.TYPE_NAME TYPE_OF_CLOTHES, ROUND(AVG(A.TOTAL_ORDER),2) AVG_AMOUNT_SPENT
+FROM TICKET A 
+JOIN TICKET_ITEM B ON (A.TICKET_ID = B.TICKET_ID)
+JOIN PRODUCT C ON (B.PRODUCT_ID = C.PRODUCT_ID)
+JOIN TYPE D ON (C.TYPE_ID = D.TYPE_ID)
+GROUP BY D.TYPE_NAME;
+```
+
+**Question 4: Which brand results in the most profit?**
+```sql
+SELECT A.BRAND_NAME, ROUND(SUM(C.PRODUCT_AMOUNT),2) PROFIT
+FROM BRAND A
+JOIN PRODUCT B ON (A.BRAND_ID = B.BRAND_ID)
+JOIN TICKET_ITEM C ON (B.PRODUCT_ID = C.PRODUCT_ID)
+GROUP BY A.BRAND_NAME
+ORDER BY 2 DESC
+LIMIT 1;
+```
+
+**Question 5: Which customer bought the largest number of female clothes?**
+```sql
+SELECT CONCAT(A.FIRSTNAME,' ',A.LASTNAME) CUSTOMER_NAME, SUM(C.QUANTITY) FEMALE_ITEMS_PURCHASED
+FROM CUSTOMER A
+JOIN TICKET B ON (A.CUSTOMER_ID = B.CUSTOMER_ID)
+JOIN TICKET_ITEM C ON (B.TICKET_ID = C.TICKET_ID)
+JOIN PRODUCT D ON (C.PRODUCT_ID = D.PRODUCT_ID)
+JOIN GENDER E ON (D.GENDER_ID = E.GENDER_ID)
+WHERE E.GENDER_NAME = 'FEMALE'
+GROUP BY A.CUSTOMER_ID
+ORDER BY 2 DESC
+LIMIT 1;
+```
