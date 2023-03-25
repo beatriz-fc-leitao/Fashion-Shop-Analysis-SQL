@@ -3,6 +3,7 @@
 ## Introduction
 <details> 
 <summary>
+Click here for the introduction
 </summary>
 	  
 **👩🏻‍💼 THE SITUATION** 
@@ -27,6 +28,8 @@ Use SQL to:
 ## Entity Relationship Diagram
 <details> 
 <summary>
-Click here for Introduction! 👋🏻
-	
+Click here for the Entity Relationship Diagram! 👋🏻
 </summary>
+	
+<kbd><img src="https://github.com/beatriz-fc-leitao/SQL_projects/blob/main/ERD.png" alt="ERD" width="750" height="480"></kbd>
+
