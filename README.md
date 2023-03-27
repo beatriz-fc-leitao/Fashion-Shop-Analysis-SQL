@@ -17,7 +17,7 @@ Use SQL to:
 - Create tables for the relational model and populate them with data
 - Use SQL queries to gain insights into the business.
 
-You can find the full SQL script for this project here: https://github.com/beatriz-fc-leitao/SQL_Fashion_Shop_Analysis/blob/main/fashion_retail_project.sql
+[Click here for the full SQL script for this project](https://github.com/beatriz-fc-leitao/SQL_Fashion_Shop_Analysis/blob/main/fashion_retail_project.sql)
 		
 ***
 
